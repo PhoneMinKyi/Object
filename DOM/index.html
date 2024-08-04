@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <h1>hi</h1>
+    <p>Lorem, ipsum dolor.</p>
+    <button>Red</button>
+    <button>Gold</button>
+    <script>
+        console.log(document)
+        console.log(document.head)
+        console.log(document.title = "JS")
+        console.log(document.body)
+        console.log(document.h1)//undefined
+        console.log(document.p)//undefined
+        const h1 = document.getElementsByTagName("h1")
+        const p = document.getElementsByTagName("p")
+        const btnRed = document.getElementsByTagName("button")[0]
+        const btnGold = document.getElementsByTagName("button")[1]
+        // console.log(btn)
+        console.log(btnRed)
+        console.log(btnGold)
+        console.log(h1)
+        console.log(h1[0])
+        console.log(h1[1])
+        // h1[0].style.color = 'red'
+        // h1[1].style.color = 'blue'
+
+        btnRed.addEventListener("click", function () {
+            document.bgColor = "red"
+            h1[0].style.color = "red"
+            h1[1].style.color = "red"
+
+        })
+
+        btnGold.addEventListener("click", function () {
+            document.bgColor = "gold"
+            h1[0].style.color = "blue"
+            h1[1].style.color = "blue"
+              
+              h1[1].style.textAlign = "center"
+            p[0].style.color = "green"
+            
+        })
+        console.log(p)
+
+    </script>
+</body>
+
+</html>
