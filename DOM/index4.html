@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .app {
+            background: red;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hello</p>
+    <button onclick="add()">Add</button>
+    <button onclick="remove()">Remove</button>
+    <button onclick="toggle()">Add/Remove</button>
+
+   
+
+
+    <script>
+        let p = document.querySelector("p")
+
+        function add() {
+            // p.classList.add('app')
+            p.className = "abc abb app"
+            p.id = "title"
+            p.title = "Hello Paragrapah"
+            p.setAttribute('class',"app application")
+        }
+
+        function remove() {
+            // p.classList.remove('app')
+            p.removeAttribute("id")
+            p.removeAttribute("class")
+            p.removeAttribute("title")
+            let res = p.hasAttribute("title")
+           
+            console.log(res)
+
+        }
+
+        function toggle() {
+            // p.classList.remove('app')
+
+        }
+        // console.log(p)
+        
+
+    </script>
+</body>
+
+</html>

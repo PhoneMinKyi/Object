@@ -16,7 +16,7 @@ let s = Symbol("symbol")
 console.log("s is",typeof s)
 let ans = aaa / 20
 console.log(ans)
-console.log("ans =>",typeof ans);//bug (error
+console.log("ans =>",typeof ans);//bug (error)
 // let c =cat;
 // console.log(c)
 

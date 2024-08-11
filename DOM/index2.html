@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet1.</h1>
+    <h1>Lorem ipsum dolor sit amet2.</h1>
+<p class="app">Lorem ipsum dolor sit amet consectetur adipisicing elit1.</p>
+<p class="app">Lorem ipsum dolor sit amet consectetur adipisicing elit2.</p>
+<p id="app">Lorem ipsum dolor sit amet consectetur adipisicing elit3.</p>
+<p id="#app">Lorem ipsum dolor sit amet consectetur adipisicing elit4.</p>
+<button>Click</button>
+<script>
+    //document.getElementById
+    //document.getElementByClassName
+    //document.getElementByTagName
+    //document.querySelector
+    //document.querySelectorAll
+    let h1 = document.getElementsByTagName('h1')
+    console.log(h1)
+    console.log(h1[0])
+    console.log(h1[1])
+    let h11 = document.getElementsByTagName("h1")
+    console.log(h11)
+let all =document.querySelectorAll("h1")
+console.log(all)
+let pClass = document.getElementsByClassName("app")[0]
+pClass.style.color = 'red'
+console.log(pClass);
+let pp =document.getElementsByClassName("app")[1]
+pp.style.background = "pink"
+pp.style.padding = "30px"
+pp.style.textAlign = "center"
+console.log(pp)
+let pId = document.getElementById("app")
+console.log(pId)
+let ppId = document.getElementById("#app")
+console.log(ppId)
+
+let btnRed = document.getElementsByTagName("button")[0]
+
+btnRed.addEventListener("click",function() {
+document.bgColor  = "red"
+})
+</script>
+</body>
+</html>

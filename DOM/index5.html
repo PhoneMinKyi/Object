@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index5</title>
+</head>
+<body>
+    <button>Red</button>
+    <button>Blue</button>
+    <button>Green</button>
+    <button>Pink</button>
+    <button>Grey</button>
+    <button>Skyblue</button>
+    <button>Tomato</button>
+    <button>Yellow</button>
+    <button>Lightblue</button>
+    <script>
+        let btns = document.querySelectorAll("button")
+btns.forEach(btn => {
+    btn.onclick = function(){
+        console.log(this.textContent)
+        document.bgColor = this.textContent
+    }
+});
+    </script>
+</body>
+</html>

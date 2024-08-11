@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index6</title>
+</head>
+<body>
+    <select name="country" id="country">
+    </select>
+
+    <script>
+         const countries = [
+          "myanmar",
+          "thailand",
+          "vietnam",
+          "china",
+          "indonesia",
+          "singapore",
+          "japan",
+          "korea",
+          "philippines",
+          "malaysia",
+          "australia",
+          "new zealand",
+          "germany",
+          "italy",
+          "france",
+          "spain",
+          "uk",
+        ]
+        countries.forEach(c => {
+            let option = <option value="${c}">${c}</option>
+document.querySelector('#country').innerHTML += option
+console.log(option)
+        });
+    </script>
+</body>
+</html>

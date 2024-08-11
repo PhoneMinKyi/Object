@@ -149,21 +149,21 @@ let users = ['bobo','mgmg','nono',"papa",'james']
     // console.log(users[0])
     // console.log(users[1])
 
-    // While
-    // let i = 100 
+    // While Loop
+    let i = 100 
     // while (i < users.length) {
     //     let user = users[i]
     //     console.log(user) 
     //     i++
     // }
 
-    // Do While
-    // do {
-    //     let user = users[i]
-    //     console.log("loopinig is testing")
-    //     console.log(user)
-    //     i++
-    // } while (i < users);
+    // Do While Loop
+    do {
+        let user = users[i]
+        console.log("looping is testing")
+        console.log(user)
+        i++
+    } while (i < users);
     
 
     

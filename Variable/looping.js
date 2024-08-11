@@ -25,9 +25,9 @@ const userList = [
     // console.log(info);
 // }
 
-// // For Each
+// For Each
 // userList.forEach(user => {
-//     // console.log(us)er)
+    // console.log(user)
 //     const {name,email,age,gender,address} = user;
     // if(gender === "male"){
     //     console.log(`name is Mr.${name} and email is ${email}`)
@@ -40,16 +40,16 @@ const userList = [
 // });
 
 // for (const i in userList) {
-//     // console.log(userList[i])
-//         // const user = userList[i];
-//         // console.log(user.name, user.age,user.gender )
+    // console.log(userList[i])
+        // const user = userList[i];
+        // console.log(user.name, user.age,user.gender )
 //     }
 
     // let bobo = userList[0]
     // for (const i in bobo) {
-    //     // console.log(i);
-    //     // console.log(bobo[i]);
-    //     // console.log(`${i} is ${bobo[i]}`)     
+        // console.log(i);
+        // console.log(bobo[i]);
+        // console.log(`${i} is ${bobo[i]}`)     
     //     }
 
     //     let coco = userList[1]
@@ -62,7 +62,7 @@ const userList = [
 
         // For OF
 // for (const u of userList) {
-//     // console.log(u);
+    // console.log(u);
 //     const {name,age,gender,address} = u
 //     console.log(`name is ${name} and age is ${age} and Gender is ${gender}`);
     
