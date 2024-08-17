@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index8</title>
+</head>
+<body>
+    <article>
+        <h1>hello</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing <span>elit. Quia, reprehenderit vel repellat, necessitatibus perspiciatis at temporibus corporis esse nemo, alias enim quas in doloribus earum nulla quae cupiditate possimus! Dicta soluta illum distinctio iure omnis praesentium explicabo, minus ex quos, molestiae id. Vitae, illo quae. Ab blanditiis nostrum fuga modi velit aut alias a delectus provident omnis, sint totam obcaecati. Excepturi veniam sit similique eos nobis! Pariatur soluta a ipsum itaque distinctio, sed doloremque obcaecati minus. Sequi consectetur similique deleniti. Earum deleniti autem dolorum debitis doloribus laudantium quas ratione ducimus modi deserunt quaerat eos explicabo, sequ</span> i adipisci optio unde porro.</p>
+        <button>show</button>
+    </article>
+
+    <article>
+        <h2>hello</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing <span>elit. Quia, reprehenderit vel repellat, necessitatibus perspiciatis at temporibus corporis esse nemo, alias enim quas in doloribus earum nulla quae cupiditate possimus! Dicta soluta illum distinctio iure omnis praesentium explicabo, minus ex quos, molestiae id. Vitae, illo quae. Ab blanditiis nostrum fuga modi velit aut alias a delectus provident omnis, sint totam obcaecati. Excepturi veniam sit similique eos nobis! Pariatur soluta a ipsum itaque distinctio, sed doloremque obcaecati minus. Sequi consectetur similique deleniti. Earum deleniti autem dolorum debitis doloribus laudantium quas ratione ducimus modi deserunt quaerat eos explicabo, sequ</span> i adipisci optio unde porro.</p>
+        <button>Show</button>
+    </article>
+
+    <article>
+        <h2>hello</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing <span>elit. Quia, reprehenderit vel repellat, necessitatibus perspiciatis at temporibus corporis esse nemo, alias enim quas in doloribus earum nulla quae cupiditate possimus! Dicta soluta illum distinctio iure omnis praesentium explicabo, minus ex quos, molestiae id. Vitae, illo quae. Ab blanditiis nostrum fuga modi velit aut alias a delectus provident omnis, sint totam obcaecati. Excepturi veniam sit similique eos nobis! Pariatur soluta a ipsum itaque distinctio, sed doloremque obcaecati minus. Sequi consectetur similique deleniti. Earum deleniti autem dolorum debitis doloribus laudantium quas ratione ducimus modi deserunt quaerat eos explicabo, sequ</span> i adipisci optio unde porro.</p>
+        <button>Show</button>
+    </article>
+
+    <script>
+        // const span = document.querySelector("span")
+        // const btn = document.querySelector("button")
+
+        // span.style.display = "none"
+        // btn.onclick = function() {
+        //     if (span.style.display === 'none'){
+        //         span.style.display = "block"
+        //         span.style.background = "red"
+        //         this.textContent = 'hide'
+        //     }else{
+        //         span.style.display = "none"
+        //         this.textContent = "show"
+        //     }
+        // }
+
+        const span = document.querySelector("span")
+        const btns = document.querySelectorAll("button")
+        span.style.display = "none"
+        btns.forEach(btn=> {
+            btn.onclick = function() {
+                console.log(this.previousElementSibling.children[0])
+                let res = this.previousElementSibling.children[0]
+                if (res.style.display === 'none'){
+                    res.style.display = "block"
+                    res.style.background = "red"
+                    this.textContent = 'hide'
+                }else{
+                    res.style.display = "none"
+                    this.textContent = "show"
+                }
+        }});
+     
+    </script>
+</body>
+</html>

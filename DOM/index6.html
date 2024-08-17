@@ -30,7 +30,7 @@
           "uk",
         ]
         countries.forEach(c => {
-            let option = <option value="${c}">${c}</option>
+            let option = `<option value="${c}">${c}</option>`
 document.querySelector('#country').innerHTML += option
 console.log(option)
         });

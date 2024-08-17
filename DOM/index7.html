@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Lorem ipsum dolor sit amet11111111111.</h1>
+        <p>Lorem ipsum dolor sit amet111111.</p>
+        <div class="app">
+            <h2>Lorem ipsum dolor sit amet2222222222.</h2>
+            <p>Lorem ipsum dolor sit amet22222222222.</p>
+            <div class="sub">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+            </div>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <span>Lorem ipsum dolor sit amet.</span>
+        </div>
+        <h2>Lorem ipsum dolor sit amet33333</h2>
+        <p>Lorem ipsum dolor sit ame333333.</p>
+    </div>
+    <script>
+        const app = document.querySelector(".app")
+        console.log("app", app)
+        app.parentElement.style.background = 'pink'
+        app.nextElementSibling.style.color = "red"
+        console.log(app.parentElement)
+        console.log(app.parentElement.parentElement)
+        console.log(app.parentElement.parentElement.children)
+        console.log(app.parentElement.parentElement.children[0])
+        console.log(app.parentElement.parentElement.children[0].children)
+        console.log(app.children)
+        console.log(app.children[0])
+        console.log(app.children[2])
+        console.log(app.children[2].querySelector("h2"))
+        console.log(app.previousElementSibling)
+        console.log(app.previousElementSibling.previousElementSibling)
+        console.log(app.nextElementSibling);
+        console.log(app.nextElementSibling.nextElementSibling);
+        console.log(document.querySelector("h2"))
+        console.log(app.querySelector("h2"))
+    </script>
+</body>
+
+</html>
