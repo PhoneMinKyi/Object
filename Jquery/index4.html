@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Hello</h1>
+        <h2>Hello</h2>
+        <div class="app">
+            <h4>Hello Hello1</h4>
+            <p>Hello Hello2</p>
+            <div class="sub">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+
+        </div>
+        <h1>hello3</h1>
+        <h3>hello3</h3>
+    </div>
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            let app = $(".app")
+            app.css('background',"pink")
+            console.log(app)
+            console.log(app.parent())
+            console.log(app.parents())
+            console.log(app.parents("body"))
+            console.log(app.children())
+            console.log(app.prev())
+            console.log(app.prevAll())
+            console.log(app.prevAll("h1"))
+            console.log(app.next())
+            console.log(app.nextAll())
+            console.log(app.nextAll("h3"))
+            console.log(app.nextAll("h3").css("background","yellow"))
+            console.log(app.next("h1").css("color","red"))
+            console.log(app.prevAll("h2").css("fontSize","5rem"))
+            console.log(app.prevAll().css("background","yellow").css("textAlign","center"))
+            console.log(app.css("background","red"))
+        })
+    </script>
+</body>
+
+</html>
