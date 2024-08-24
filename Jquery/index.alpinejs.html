@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine js</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <style>
+        .app{
+            width: 100px;
+            height: auto;
+            background: pink;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div x-data="{ open: false }">
+        <!-- <button @click="open = true">Click</button> -->
+
+ 
+        <!-- <span x-show="open">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quae?</p>
+        </span>
+    </div> -->
+    <!-- <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+    <div x-data="{name:'<i>bobo</i>' , age:20, gender: '<b>male</b>', address:'yangon'}">
+        <ul>
+            <!-- <li>Name is <span x-html="name"></span></li>
+            <li>Age is <span x-text="age"></span></li>
+            <li>Gender is <span x-html="gender.toUpperCase()"></span></li>
+            <li>Live in <span x-text="address"></span></li> -->
+
+            <!-- <li>Name is <span x-html="name"></span>,Age is <span x-text="age"></span>,Gender is <span x-html="gender.toUpperCase()"></span>,Live in <span x-text="address"></span></li> 
+
+
+
+
+        </ul>
+    </div> -->
+    <!-- <div x-data="{ count: 0 }">
+        <!-- <button x-on:click="count++">Increment</button>
+        <button x-on:click="count--">Decresement</button> 
+        <button x-on:click="if(count<10)count++">Increment</button>
+
+ 
+        <span x-text="count"></span>
+    </div> -->
+
+      <!-- <div x-data="{ open: false }">
+         <button @click="open = !open">Toggle</button>
+
+ 
+        <div x-show="open" @click.outside="open = false" class="app">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quae?</div>
+        </div>
+    </div> -->
+
+    <div
+        x-data="{
+            search: '',
+ 
+            items: ['foo', 'bar', 'baz','hello','hi','gg'],
+ 
+        get filteredItems() {
+                return this.items.filter(
+                i => i.includes(this.search)
+                )
+            }
+        }"
+    >
+        <input x-model="search" placeholder="Search...">
+ 
+        <ul>
+            <template x-for="item in filteredItems" :key="item">
+                <li x-text="item"></li>
+            </template>
+        </ul>
+    </div>
+
+</body>
+</html>

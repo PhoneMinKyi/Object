@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JQuery</h1>
+    <p>Lorem ipsum dolor sit<span>amet consectetur adipisicing elit. In magni quaerat qui nisi eaque cupiditate magnam
+        maiores deserunt tempora. Laudantium asperiores fugiat deserunt? Maxime libero porro quis a nobis dolor
+            aut perferendis magni repellat esse temporibus debitis, voluptatibus optio doloremque! Alias minima
+            similique assumenda ipsa quam autem facilis illo nostrum?</span> </p>
+    <button>Show</button>
+
+    <h1>JQuery</h1>
+    <p>Lorem ipsum dolor sit<span>amet consectetur adipisicing elit. In magni quaerat qui nisi eaque cupiditate magnam
+        maiores deserunt tempora. Laudantium asperiores fugiat deserunt? Maxime libero porro quis a nobis dolor
+            aut perferendis magni repellat esse temporibus debitis, voluptatibus optio doloremque! Alias minima
+            similique assumenda ipsa quam autem facilis illo nostrum?</span> </p>
+    <button>Show</button>
+
+    <h1>JQuery</h1>
+    <p>Lorem ipsum dolor sit<span>amet consectetur adipisicing elit. In magni quaerat qui nisi eaque cupiditate magnam
+        maiores deserunt tempora. Laudantium asperiores fugiat deserunt? Maxime libero porro quis a nobis dolor
+            aut perferendis magni repellat esse temporibus debitis, voluptatibus optio doloremque! Alias minima
+            similique assumenda ipsa quam autem facilis illo nostrum?</span> </p>
+    <button>Show</button>
+
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        // $(document).ready(function () {
+        //     $("span").hide()
+        //     $("button").click(function () {
+        //         $("span").toggle("slow")
+        //         if ($(this).text() === "show") {
+        //             $(this).text("hide")
+        //         } else {
+        //             $(this).text("show")
+
+        //         }
+        //         // $(this).text($(this).text() === "show" ? "hide":"show")
+        //     })
+        // })
+
+        $(document).ready(function (){
+           
+            $("span").hide()
+            $("button").click(function(){
+                $(this).prev().children("span").toggle(500)
+            })
+        })
+
+    </script>
+</body>
+
+</html>
